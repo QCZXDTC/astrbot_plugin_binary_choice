@@ -1,0 +1,2 @@
+# astrbot_plugin_binary_choice
+孤清辰的astrbot开源仓库
