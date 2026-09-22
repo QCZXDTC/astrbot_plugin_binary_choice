@@ -1,0 +1,5 @@
+name: astrbot_plugin_binary_choice
+display_name: 二选一自动回答
+desc: 自动识别二选一问题并随机选择一个选项回复
+version: 1.0.1
+author: 孤清辰

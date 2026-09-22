@@ -1,0 +1,50 @@
+{
+    "enable": {
+        "type": "bool",
+        "description": "是否启用插件",
+        "default": true
+    },
+    "keywords": {
+        "type": "list",
+        "description": "触发关键词列表",
+        "default": ["还是", "或者", "or"],
+        "items": { "type": "string" }
+    },
+    "reply_template": {
+        "type": "string",
+        "description": "回复模板({choice}为随机选项)",
+        "default": "建议您选择：{choice}"
+    },
+    "reply_interval": {
+        "type": "int",
+        "description": "同一用户回复冷却(秒)",
+        "default": 30,
+        "min": 1,
+        "max": 3600
+    },
+    "bot_qq": {
+        "type": "string",
+        "description": "机器人QQ(防自我触发,留空不限制)",
+        "default": ""
+    },
+    "blacklist_groups": {
+        "type": "list",
+        "description": "黑名单群(不生效)",
+        "default": [],
+        "items": { "type": "string" }
+    },
+    "whitelist_groups": {
+        "type": "list",
+        "description": "白名单群(空则全生效)",
+        "default": [],
+        "items": { "type": "string" }
+    },
+    "max_text_length": {
+    "type": "int",
+    "description": "消息最大字数限制",
+    "hint":"超过此字数不触发判断(设为0则不限制)",
+    "default": 100,
+    "min": 0,
+    "max": 2000
+    }
+}
